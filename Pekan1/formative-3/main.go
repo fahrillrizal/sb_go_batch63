@@ -31,23 +31,35 @@ func main() {
 	var nilaiJohn = 80
 	var nilaiDoe = 50
 
-	indeks := func(nilai int) string {
-		if nilai >= 80{
-			return "A"
-		} else if nilai < 80 && nilai >= 70{
-			return "B"
-		} else if nilai < 70 && nilai >= 60{
-			return "C"
-		} else if nilai < 60 && nilai >= 50{
-			return "D"
-		} else {
-			return "E"
-		}		
+	var indeksJohn, indeksDoe string
+
+	if nilaiJohn >= 80 {
+		indeksJohn = "A"
+	} else if nilaiJohn >= 70 {
+		indeksJohn = "B"
+	} else if nilaiJohn >= 60 {
+		indeksJohn = "C"
+	} else if nilaiJohn >= 50 {
+		indeksJohn = "D"
+	} else {
+		indeksJohn = "E"
+	}
+
+	if nilaiDoe >= 80 {
+		indeksDoe = "A"
+	} else if nilaiDoe >= 70 {
+		indeksDoe = "B"
+	} else if nilaiDoe >= 60 {
+		indeksDoe = "C"
+	} else if nilaiDoe >= 50 {
+		indeksDoe = "D"
+	} else {
+		indeksDoe = "E"
 	}
 
 	fmt.Println("Soal 2:")
-	fmt.Println("Indeks Nilai John:", indeks(nilaiJohn))
-	fmt.Println("Indeks Nilai Doe:", indeks(nilaiDoe))
+	fmt.Println("Indeks Nilai John:", indeksJohn)
+	fmt.Println("Indeks Nilai Doe:", indeksDoe)
 
 	//soal 3
 	var tanggal = 14
