@@ -54,7 +54,7 @@ func postNilai(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if input.Nilai > 100 || input.Nilai < 0{
+	if input.Nilai > 100 {
 		http.Error(w, "Nilai tidak valid", http.StatusBadRequest)
 		return
 	}
