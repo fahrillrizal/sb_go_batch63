@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "007649c6-7b18-491e-8e02-db098caa28d9",
+		"name": "Bootcamp Go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22087046"
+	},
+	"item": [
+		{
+			"name": "Post Nilai",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nama\": \"John Doe\",\n  \"matkul\": \"Pemograman\",\n  \"nilai\": 85\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/nilai",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nilai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Nilai",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/nilai/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"nilai",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
